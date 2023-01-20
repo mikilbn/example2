@@ -128,6 +128,24 @@ header .fa-chevron-down {
   color: #039dff;
 }
 
+.aboutus-hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/technology-640.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  z-index: 0;
+}
+.aboutus-hero .aboutus-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -10;
+}
+
 @media (min-width: 320px) {
   header h1 {
     font-size: 36px;
@@ -152,5 +170,8 @@ header .fa-chevron-down {
 @media (min-width: 1080px) {
   header > .hero-img {
     background-image: url("../img/playstation-1920.jpg");
+  }
+  .portfolio > .portfolio-img {
+    background-image: url("../img/technology-1280.jpg");
   }
 }/*# sourceMappingURL=main.css.map */
