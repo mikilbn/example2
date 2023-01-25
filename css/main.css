@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #333;
+  background-color: #ebecf2;
 }
 
 h2 {
@@ -130,7 +130,6 @@ header .fa-chevron-down {
 
 .aboutus-hero {
   position: relative;
-  height: 100vh;
   background-image: url("../img/technology-640.jpg");
   background-position: center;
   background-size: cover;
@@ -144,6 +143,28 @@ header .fa-chevron-down {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -10;
+}
+.aboutus-hero .aboutus-hero-item {
+  margin: 10px 0;
+}
+.aboutus-hero .aboutus-hero-item i {
+  font-size: 36px;
+}
+.aboutus-hero .aboutus-hero-item .aboutus-hero-title {
+  font-size: 24px;
+}
+
+.portfolio .carousel-item {
+  height: 600px;
+}
+.portfolio .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
 }
 
 @media (min-width: 320px) {
@@ -163,15 +184,15 @@ header .fa-chevron-down {
   }
 }
 @media (min-width: 992px) {
-  html {
-    scroll-padding-top: 72px;
+  nav {
+    height: 82px;
   }
 }
 @media (min-width: 1080px) {
   header > .hero-img {
     background-image: url("../img/playstation-1920.jpg");
   }
-  .portfolio > .portfolio-img {
+  .aboutus-hero {
     background-image: url("../img/technology-1280.jpg");
   }
 }/*# sourceMappingURL=main.css.map */
