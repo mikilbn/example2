@@ -1,4 +1,4 @@
-@import "./colors";
+@import "colors";
 
 *,
 *::before,
@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #333;
+  background-color: $bg-color;
 }
 
 h2 {
@@ -115,6 +115,7 @@ header {
     color: $white;
   }
 }
+
 .aboutus {
   i {
     margin-top: 20px;
@@ -138,7 +139,6 @@ header {
 
 .aboutus-hero {
   position: relative;
-  height: 100vh;
   background-image: url("../img/technology-640.jpg");
   background-position: center;
   background-size: cover;
@@ -152,6 +152,30 @@ header {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: -10;
+  }
+  .aboutus-hero-item {
+    margin: 10px 0;
+    i {
+      font-size: 36px;
+    }
+    .aboutus-hero-title {
+      font-size: 24px;
+    }
+  }
+}
+
+.portfolio {
+  .carousel-item {
+    height: 600px;
+  }
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    right: 0;
+    padding: 40px 0;
+  }
+  .carousel-indicators {
+    padding-bottom: 20px;
   }
 }
 
@@ -178,15 +202,15 @@ header {
 }
 
 @media (min-width: 992px) {
-  html {
-    scroll-padding-top: 72px;
+  nav {
+    height: 82px;
   }
 }
 @media (min-width: 1080px) {
   header > .hero-img {
     background-image: url("../img/playstation-1920.jpg");
   }
-    .portfolio > .portfolio-img {
+  .aboutus-hero {
     background-image: url("../img/technology-1280.jpg");
   }
 }
