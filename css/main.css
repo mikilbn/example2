@@ -167,6 +167,145 @@ header .fa-chevron-down {
   padding-bottom: 20px;
 }
 
+.prices .price-box {
+  margin: 20px 10px;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+.prices .price-box h3 {
+  color: #039dff;
+  text-transform: uppercase;
+}
+.prices .price-box span {
+  font-weight: bold;
+}
+.prices .price-box i {
+  padding: 0 5px;
+  font-size: 24px;
+}
+.prices .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.prices .price-box .price-tag {
+  font-size: 30px;
+  font-weight: bold;
+}
+.prices .price-box:hover {
+  transform: scale(1.05);
+}
+.prices .price-info {
+  margin-top: 30px;
+}
+.prices .price-info a {
+  text-decoration: none;
+}
+
+.team h2 {
+  color: #ddd;
+}
+.team .team-hero {
+  background-image: url(../img/team/chairs-1920.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+.team .team-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -10;
+}
+.team .card {
+  margin: 0 30px;
+  transition: transform 0.3s;
+}
+.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .card i {
+  color: #039dff;
+  padding: 10px;
+}
+.team .card .card-body {
+  height: 160px;
+}
+.team .card:hover {
+  transform: scale(0.95);
+}
+.team .card-title {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.achievements i {
+  padding: 10px;
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+.achievements .achievements-list {
+  padding: 20px 0;
+}
+.achievements .achievement-number {
+  font-size: 22px;
+}
+.achievements .achievement-text {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.contact {
+  background-image: url(../img/skyline-640.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  position: relative;
+  z-index: 0;
+}
+.contact .underline {
+  background-color: #ddd;
+}
+.contact h2 {
+  color: #ddd;
+  font-weight: bold;
+}
+.contact .contact-us {
+  display: flex;
+  align-items: center;
+  color: #ddd;
+}
+.contact .contact-us h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.contact .contact-us .social-media {
+  font-size: 26px;
+}
+.contact .contact-us .social-media a {
+  padding: 0 10px;
+  color: #ddd;
+}
+.contact .contact-us .social-media a:hover {
+  color: #039dff;
+}
+.contact .contact-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 9, 27, 0.85);
+  z-index: -10;
+}
+
 @media (min-width: 320px) {
   header h1 {
     font-size: 36px;
@@ -187,6 +326,9 @@ header .fa-chevron-down {
   nav {
     height: 82px;
   }
+  .prices .price-info {
+    font-size: 18px;
+  }
 }
 @media (min-width: 1080px) {
   header > .hero-img {
@@ -194,5 +336,13 @@ header .fa-chevron-down {
   }
   .aboutus-hero {
     background-image: url("../img/technology-1280.jpg");
+  }
+  .contact {
+    background-image: url("../img/skyline-1280.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .achievements {
+    height: 32vh;
   }
 }/*# sourceMappingURL=main.css.map */
