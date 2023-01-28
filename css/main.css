@@ -341,8 +341,4 @@ header .fa-chevron-down {
     background-image: url("../img/skyline-1280.jpg");
   }
 }
-@media (min-width: 1200px) {
-  .achievements {
-    height: 32vh;
-  }
-}/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
